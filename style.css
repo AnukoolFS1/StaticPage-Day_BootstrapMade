@@ -13,3 +13,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --paddings:  0vh 10vh;
+}
+
+
+/* header ----------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: #242424;
+    color: white;
+    font-family: Poppins;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navs>ul {
+    display: flex;
+    list-style-type: none;
+    gap: .15rem;
+}
+
+.navs>ul>li {
+    padding: 1.25rem 1rem;
+    transition: background-color .3s ease-in;
+    cursor: pointer;
+}
+
+.navs>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.navs>ul>li:hover {
+    background-color: #CC1616;
+}
+
+/* hero section ------------- */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(#000000a5, #000000a7), url('./assets/img/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: var(--paddings);
+    color: white;
+    font-family: Poppins;
+}
+
+.hero>h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.hero>h2 {
+    font-weight: 300;
+}
+
+.hero>button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: .7rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    font-size: Poppins;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* abouts ------------- */
+.about{
+    padding: var(--paddings);
+}
